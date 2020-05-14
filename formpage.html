@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+        <style>
+       
+ header{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+    ul li a{
+        text-decoration: none;
+        color:#fff;
+        padding: 5px 20px;
+        border:1px solid transparent;
+        transition: 0.6s ease;
+    }
+
+ul li a:hover{
+    background-color: #fff;
+    color : #000;
+</style>
+    </head>
+    <body background="images/j4.jpg">
+    	<header>
+         <div>
+              <hr color="red" size="9">
+             <ul>
+                <li><a href="file:///G:/html/home.html">Home</a></li>
+                <li ><a href="file:///G:/html/about.html">About</a></li>
+                <li><a href="file:///G:/html/best_places.html">Places </a></li>
+                <li><a href="file:///G:/html/famous_food.html">Famous food</a></li>
+                <li ><a href="file:///G:/html/gallery.html">Gallery</a></li>
+                <li class="active"><a href="file:///G:/html/formpage.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <img src="images/logo.png" align="top" height=90px width=450px>
+            <hr color="red" size="3">
+            </div>
+<br>
+<br>
+            
+        <div class="container">
+            <div class="container">
+                <div class="form-container z-depth-5">
+                    <h3>Contact Us</h3> 
+                    <div class="row">
+                        <form class="col s12" id="reused_form">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="name" type="text" name="name" required class="validate">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" name="email" required class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" name="message" class="materialize-textarea" class="validate" ></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <div id="error_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Error
+                            </h4>
+                            Sorry there was an error sending your form. 
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Success! Your Message was Sent Successfully.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Import jQuery before materialize.js-->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        </div>
+    </header>
+    </body>
+</html>

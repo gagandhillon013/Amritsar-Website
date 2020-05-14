@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery
+		
+	</title>
+	<style> 
+		header{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+    ul li a{
+        text-decoration: none;
+        color:#fff;
+        padding: 5px 20px;
+        border:1px solid transparent;
+        transition: 0.6s ease;
+    }
+
+ul li a:hover{
+    background-color: #fff;
+    color : #000;
+}
+.logo img{
+	align:left;
+	height: 90px;
+	width: 450px;
+	
+}
+		img
+		{
+			width: 200px;
+			height: 190px;
+		}
+		th
+		{
+			font-size: 2em;
+			background-color: #f9ddff;
+			color:blue;
+
+		}
+		body
+		{
+			font-family: sans-serif;
+			font-size: 1em;
+			text-align: center;
+			background-color:pink;
+		}
+		table
+		{
+			background-color: white;
+			width: 60%
+		}
+		td
+		{
+			padding: 25px;
+			color:orange;
+		}
+
+
+	</style>
+</head>
+<body >
+	<header>
+	<div>
+              <hr color="red" size="9">
+            <ul>
+                <li><a href="file:///G:/html/home.html">Home</a></li>
+                <li ><a href="file:///G:/html/about.html">About</a></li>
+                <li><a href="file:///G:/html/best_places.html">Places </a></li>
+                <li><a href="file:///G:/html/famous_food.html">Famous food</a></li>
+                <li class="active"><a href="file:///G:/html/gallery.html">Gallery</a></li>
+                <li><a href="file:///G:/html/formpage.html">Contact us</a></li>
+            </ul>
+        </div>
+        
+       <div  class="logo">
+            <img src="images/logo.png"  colspan ="2" align="top" height: 90px width: 450px>
+            <hr color="red" size="3">
+            </div>
+	<table align="center">
+		<tr>
+			<th colspan="4">Photo Gallery</th>
+		</tr>
+		<tr>
+			<td colspan="4">Click on the thumnails below to make the image larger</td>
+		</tr>
+		<tr>
+			<td><a href="images/1.jpg"><img src="images/1.jpg"></a></td>
+            <td><a href="images/2.jpg"><img src="images/2.jpg"></a></td>
+		    <td><a href="images/3.jpg"><img src="images/3.jpg"></a></td>
+			<td><a href="images/4.jpg"><img src="images/4.jpg"></a></td>
+			</tr>
+			<tr>
+			<td><a href="images/5.jpg"><img src="images/5.jpg"></a></td>
+			<td><a href="images/62.jpg"><img src="images/62.jpg"></a></td>
+		    <td><a href="images/7.jpg"><img src="images/7.jpg"></a></td>
+			<td><a href="images/8.jpg"><img src="images/8.jpg"></a></td>
+			</tr>
+
+
+	</table>
+
+</header>
+
+</body>
+</html>
